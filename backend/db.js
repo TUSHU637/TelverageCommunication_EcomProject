@@ -1,6 +1,7 @@
 const mongoose=require('mongoose');
 const main=async()=>{
      const MONGOURL="mongodb://0.0.0.0:27017/E-comm";
+     
     //const MONGOURL=process.env.MONGOLOCALURL  //NOT WORKING CHECK IT LATER
     await mongoose.connect(MONGOURL)
     const fetchData= mongoose.connection.db.collection("products");
